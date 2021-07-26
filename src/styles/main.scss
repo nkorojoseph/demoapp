@@ -1,0 +1,158 @@
+@import url('https://fonts.google.com/specimen/Space+Mono');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body{
+    background: #b8e6e7 ;
+    font-family: 'Space Mono';
+    font-weight: 400px;
+    font-size: 24;
+}
+
+.header{
+
+    text-align: center;
+    
+
+    h2{
+        letter-spacing: .3em;
+        font-weight: 700;
+    }
+
+    span{
+        display: block;
+
+    }
+}
+
+.w3-container{
+    margin:1.5em;
+    padding: 1em 1em 1em 1em;
+}
+
+
+
+section.tip-board {
+
+    div{
+        width: 100%;
+        
+    }
+
+    .w3-container {
+        margin:0;
+        background: white;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 1.2em;
+        border-top-left-radius: 1.2em;
+    }
+
+    .w3-button{
+        background: #00494d;
+    }
+
+    .w3-display-container{
+        height: 100%;
+        background: #00494d ;
+    }
+
+    // .w3-row{
+    //     display: flex;
+    // }
+   
+    .form-group {
+        margin: 1.2em;
+    }
+
+    .textinput-flex{
+        display: flex;
+        color:#00494d ;
+    }
+
+    .input-icon{
+        
+        position: absolute;
+        margin-left: .4em;
+        align-content: center;
+        filter: brightness(50%);
+ 
+     }
+
+     .inline-input {
+        display: inline;
+        text-align: right;
+        font-size: 24px;
+        
+    }
+
+  
+    .percent-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+        gap:20px;
+        font-size: 24px;
+        color: white;
+        max-width: 500px;
+        margin: 20px auto;
+
+        button:last-child{
+            background: #f4fafa;
+            color: hsl(183, 100%, 15%);
+        }
+
+    }
+
+    .totalling{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:auto;
+       
+    }
+
+
+    .total-group {
+        margin-right: 20px !important;
+        font-size: 24px;
+    }
+
+    .total-amount {
+        color: green;
+        font-size: 24px;
+       
+    }
+
+    .reset_button{
+
+        align-self: end;
+        justify-self: center;
+        background: #a4d1d3;
+        //margin: 0 auto 10px 30px;
+        width: 300px;
+        
+    }
+
+}
+
+@media only screen and (min-width:700px) {
+    .tip-board{
+        max-width: 1070px;
+        margin: 0 auto 20px auto;
+        
+    }
+
+    .test-display{
+        display: grid;    
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    .test-display::before{
+        content: none;
+    }
+    .test-display::after{
+        content: none;
+    }
+
+    
+}
+
+
