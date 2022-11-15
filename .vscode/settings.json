@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f079cb30-f3f4-4f45-8c0d-70d259ed34a4/AppServices/subscriptions/f079cb30-f3f4-4f45-8c0d-70d259ed34a4/resourceGroups/GNPC-Test/providers/Microsoft.Web/sites/gnpctests",
+    "appService.deploySubpath": "."
+}
