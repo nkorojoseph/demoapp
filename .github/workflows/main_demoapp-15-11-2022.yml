@@ -21,11 +21,11 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: npm install, build
+      - name: npm install, build, and test
         run: |
-          npm login
-          npm install --registry https://registry.npmjs.org
+          npm install
           npm run build --if-present
+          npm run test --if-present
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'demoapp-15-11-2022'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4097E93E49F141E2A8186992C224C95A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9D906F43B86A44669AB95341C8C8874F }}
           package: .
